@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us card || Learning robo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/aboutstyle.css">
+        <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/sliderstyle.css">
+    <link rel="stylesheet" href="css/hamburgerstyle.css">
+    <link rel="stylesheet" href="css/optionstyle.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/mediaquerystyle.css">
+    <link rel="stylesheet" href="css/loginquerystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="sidecheck">
+            <div class="sidebar">
+                <label for="sidecheck" class="side-bar">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                      </div>
+                    <script src="bar.js"></script>
+                </label>
+            </div>
+            <div class="nav">
+                <div class="logo-cont">
+                    <p>Clover</p>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="main">
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">New Collection</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Sale</a>
+                    <a href="#">MensWear</a>
+                    <a href="#">Latest Blogs</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="lang">
+                    <select name="" id="">
+                        <option value="English" active>English</option>
+                        <option value="English">Hindi</option>
+                        <option value="English">Russian</option>
+                        <option value="English">French</option>
+                    </select>
+                </div>
+                <div class="user" id="user1">
+                    <div class="user-name">Vipin</div>
+                    <div class="profile" style="cursor:pointer;">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ecart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="option">
+                <div class="user">
+                    <div class="pt"></div>
+                    <div class="user-name">Vipin</div>
+                    <div class="profile">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ecart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Items</p>
+                </div>
+                <div class="log">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <p>Login</p>
+                </div>
+                <script>
+                    document.querySelector(".profile").addEventListener('click',()=>{
+                        if(document.querySelector(".option").style.display =="block"){
+                            document.querySelector(".option").style.display = "none";
+                        }else{
+                        document.querySelector(".option").style.display = "block";}
+                    })
+                </script>
+            </div>
+            <div class="btn-login">
+                <div class="container">
+                    <div class="main">
+                        <div class="shift">
+                            <div class="lgad" id="pg1">
+                                <input type="button" value="Registrer" class="regf">
+                                <video src="video/1.mp4.mp4" class="regvideo" autoplay loop muted></video>
+                            </div>
+                            <div class="regad" id="pg2">
+                                <input type="button" value="Login" class="lgf">
+                                <video src="video/1.mp4.mp4" class="lgvideo" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        <form action="" method="post" class="register">
+                            <div class="title">Register</div>
+                            <div class="reg">
+                                <div class="regname">
+                                    Name <br>
+                                    <input type="text" name="" >
+                                </div>
+                                <div class="regemail">
+                                    Email <br>
+                                    <input type="email" name="" >
+                                </div>
+                                <div class="regpassword">
+                                    Password <br>
+                                    <input type="password" name="" >
+                                </div>
+                                <div class="regcpassword">
+                                    Confirm Password <br>
+                                    <input type="password" name="" >
+                                </div>
+                            </div>
+                            <input type="submit" value="Register" class="sub">
+                        </form>
+                        <form action="" method="post" class="signin" id="loginform" onsubmit="login()">
+                            <div class="title">Login</div>
+                            <div class="sign">
+                                <div class="lemail">
+                                    Email : <br>
+                                    <input type="email" name="" id="lgemail">
+                                </div>
+                                <div class="lpassword">
+                                    Password : <br>
+                                    <input type="password" name="" id="lgpass">
+                                </div>
+                            </div>
+                            <p class="err"></p>
+                            <input type="submit" value="Login" class="lgn">
+                        </form>
+                        <script>
+                            document.querySelector(".regf").addEventListener("click",()=>{
+                                if(window.innerWidth > 1365){
+                                    document.querySelector(".shift").style.transform = "translateX(100%)";
+                                    document.querySelector("#pg1").style.display = "none";
+                                    document.querySelector("#pg1").className = "regad";
+                                    document.querySelector("#pg2").style.display = "block";
+                                }else{
+                                    document.querySelector(".shift").style.transform = "translateY(100%)";
+                                    document.querySelector("#pg1").style.display = "none";
+                                    document.querySelector("#pg1").className = "regad";
+                                    document.querySelector("#pg2").style.display = "block";
+                                }
+                            });
+                            document.querySelector(".lgf").addEventListener("click",()=>{
+                                if(window.innerWidth > 1365){
+                                    document.querySelector(".shift").style.transform = "translateX(0%)";
+                                    document.querySelector("#pg2").style.display = "none";
+                                    document.querySelector("#pg2").className = "lgad";
+                                    document.querySelector("#pg1").style.display = "block";
+                                }else{
+                                    document.querySelector(".shift").style.transform = "translateY(0%)";
+                                    document.querySelector("#pg2").style.display = "none";
+                                    document.querySelector("#pg2").className = "lgad";
+                                    document.querySelector("#pg1").style.display = "block";
+                                }
+                            });
+                            document.querySelector(".log").addEventListener('click',()=>{
+                                document.querySelector(".btn-login").style.display = 'flex'; 
+                            })
+                        </script>
+                    </div>
+                </div>
+                <div class="cross">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                <script>
+                     document.querySelector(".cross").addEventListener('click',()=>{
+                                document.querySelector(".btn-login").style.display = "none";
+                            })
+                </script>
+            </div>
+            <script src="index.js"></script>
+        </header>
+        <section>
+            <div class = "image">
+               <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png">
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>
+                    Clover, an Organisation focus on quality ,Promise best service to its customers
+                </p>
+                <ul class = "links">
+                    <li><a href = "#">work</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">service</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">contact</a></li>
+                </ul>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </section><br><br>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Clover</a></div>
+    </body>
+</html>

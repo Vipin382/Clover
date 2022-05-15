@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/sliderstyle.css">
+    <link rel="stylesheet" href="css/optionstyle.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/loginquerystyle.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/menwearstyle.css">
+    <link rel="stylesheet" href="css/newshoestyle.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/hamburgerstyle.css">
+    <link rel="stylesheet" href="css/mediaquerystyle.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+   .img1{
+       background-attachment: fixed;
+   }
+</style>
+<body>
+    <header>
+        <input type="checkbox" id="sidecheck">
+        <div class="sidebar">
+            <label for="sidecheck" class="side-bar">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                  </div>
+                <script src="javascript/bar.js"></script>
+            </label>
+        </div>
+        <div class="nav">
+            <div class="logo-cont">
+                <p>Clover</p>
+            </div>
+            <div class="search">
+                <input type="text" name="" id="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#newcollect">New Collection</a>
+                <a href="#menwear">MensWear</a>
+                <a href="contactus.html">Contact us</a>
+            </div>
+            <div class="lang">
+                <select name="" id="">
+                    <option value="English" active>English</option>
+                    <option value="English">Hindi</option>
+                    <option value="English">Russian</option>
+                    <option value="English">French</option>
+                </select>
+            </div>
+            <div class="user" id="user1">
+                <div class="user-name">Vipin</div>
+                <div class="profile" style="cursor:pointer;">
+                    <img src="images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="ecart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    <div class="slide">
+        <div class="bars">
+            <label class="bar1" for="im1" id="bt1"></label>
+            <label class="bar1" for="im2"></label>
+            <label class="bar1" for="im3"></label>
+            <label class="bar1" for="im4"></label>
+            <label class="bar1" for="im5"></label>   
+        </div>
+
+        <input type="radio" name="check1" id="im1" checked>
+        <input type="radio" name="check1" id="im2">
+        <input type="radio" name="check1" id="im3">
+        <input type="radio" name="check1" id="im4">
+        <input type="radio" name="check1" id="im5">
+
+        <div class="img1 first">
+            <img src="images/2.jpg" alt="">
+        </div>
+        <div class="img1">
+            <img src="images/3.jpg" alt="">
+        </div>
+        <div class="img1">
+            <img src="images/4.jpg" alt="">
+        </div>
+        <div class="img1">
+            <img src="images/5.jpg" alt="">
+        </div>
+        <div class="img1">
+            <img src="images/6.jpg" alt="">
+        </div>
+            <script>
+                var counter = 1;
+                setInterval(()=>{
+                    document.getElementById('im'+counter).checked = true;
+                    counter++;
+                    if(counter>5){
+                        counter = 1;
+                    }
+                },2000);
+            </script>
+        </div>
+        <div class="option">
+            <div class="user">
+                <div class="pt"></div>
+                <div class="user-name">Vipin</div>
+                <div class="profile">
+                    <img src="images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="ecart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Items</p>
+            </div>
+            <div class="log">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <p>Login</p>
+            </div>
+            <script>
+                document.querySelector(".profile").addEventListener('click',()=>{
+                    if(document.querySelector(".option").style.display =="block"){
+                        document.querySelector(".option").style.display = "none";
+                    }else{
+                    document.querySelector(".option").style.display = "block";}
+                })
+            </script>
+        </div>
+        <div class="btn-login">
+            <div class="container">
+                <div class="main">
+                    <div class="shift">
+                        <div class="lgad" id="pg1">
+                            <input type="button" value="Registrer" class="regf">
+                            <video src="video/1.mp4.mp4" class="regvideo" autoplay loop muted></video>
+                        </div>
+                        <div class="regad" id="pg2">
+                            <input type="button" value="Login" class="lgf">
+                            <video src="video/1.mp4.mp4" class="lgvideo" autoplay loop muted></video>
+                        </div>
+                    </div>
+                    <form action="" method="post" class="register">
+                        <div class="title">Register</div>
+                        <div class="reg">
+                            <div class="regname">
+                                Name <br>
+                                <input type="text" name="" >
+                            </div>
+                            <div class="regemail">
+                                Email <br>
+                                <input type="email" name="" >
+                            </div>
+                            <div class="regpassword">
+                                Password <br>
+                                <input type="password" name="" >
+                            </div>
+                            <div class="regcpassword">
+                                Confirm Password <br>
+                                <input type="password" name="" >
+                            </div>
+                        </div>
+                        <input type="submit" value="Register" class="sub">
+                    </form>
+                    <form action="" method="post" class="signin" id="loginform" onsubmit="login()">
+                        <div class="title">Login</div>
+                        <div class="sign">
+                            <div class="lemail">
+                                Email : <br>
+                                <input type="email" name="" id="lgemail">
+                            </div>
+                            <div class="lpassword">
+                                Password : <br>
+                                <input type="password" name="" id="lgpass">
+                            </div>
+                        </div>
+                        <p class="err"></p>
+                        <input type="submit" value="Login" class="lgn">
+                    </form>
+                    <script>
+                        document.querySelector(".regf").addEventListener("click",()=>{
+                            if(window.innerWidth > 1365){
+                                document.querySelector(".shift").style.transform = "translateX(100%)";
+                                document.querySelector("#pg1").style.display = "none";
+                                document.querySelector("#pg1").className = "regad";
+                                document.querySelector("#pg2").style.display = "block";
+                            }else{
+                                document.querySelector(".shift").style.transform = "translateY(100%)";
+                                document.querySelector("#pg1").style.display = "none";
+                                document.querySelector("#pg1").className = "regad";
+                                document.querySelector("#pg2").style.display = "block";
+                            }
+                        });
+                        document.querySelector(".lgf").addEventListener("click",()=>{
+                            if(window.innerWidth > 1365){
+                                document.querySelector(".shift").style.transform = "translateX(0%)";
+                                document.querySelector("#pg2").style.display = "none";
+                                document.querySelector("#pg2").className = "lgad";
+                                document.querySelector("#pg1").style.display = "block";
+                            }else{
+                                document.querySelector(".shift").style.transform = "translateY(0%)";
+                                document.querySelector("#pg2").style.display = "none";
+                                document.querySelector("#pg2").className = "lgad";
+                                document.querySelector("#pg1").style.display = "block";
+                            }
+                        });
+                        document.querySelector(".log").addEventListener('click',()=>{
+                            document.querySelector(".btn-login").style.display = 'flex'; 
+                        })
+                    </script>
+                </div>
+            </div>
+            <div class="cross">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+            </div>
+            <script>
+                 document.querySelector(".cross").addEventListener('click',()=>{
+                            document.querySelector(".btn-login").style.display = "none";
+                        })
+            </script>
+        </div>
+        <script src="javascript/index.js"></script>
+    </header>
+    <section>
+        <div class="newlook"><p>
+            New Collections
+        </p></div>
+        <div class="new_collection" id="newcollect">
+            <div class="list">
+                <script src="javascript/shoes.js"></script>
+                <script>
+                  var a="";
+                  for(var i=0;i<shoes.length;i++){
+                    a=a+`<div class="container">  
+                            <div class="card">  
+                            <div class="imgBx">  
+                            <img src=${shoes[i].src}>  
+                            </div>  
+                            <div class="contentBx">  
+                            <h2>Clover Shoes</h2>  
+                            <div class="size">  
+                                <h3>Size :</h3>  
+                                <span>7</span>  
+                                <span>8</span>  
+                                <span>9</span>  
+                                <span>10</span>  
+                            </div>  
+                            <div class="color">  
+                                <h3>Color :</h3>  
+                                <span></span>  
+                                <span></span>  
+                                <span></span>  
+                            </div>  
+                            <a href="#">Buy Now</a>  
+                            </div>  
+                            </div>  
+                            </div>  `;
+                  }
+                  document.querySelector(".list").innerHTML = a;
+                </script>
+              </div>
+        </div>
+        <div class="newlook"id="menwear"><p>
+           Mens Wear
+        </p></div>
+        <div class="menWear">
+            <div class="clothCard">
+                <script src="javascript/shirt.js"></script>
+                <script>
+                  var v="";
+                  for(var i=0;i<shirt.length;i++){
+                    v=v+`<div class="wrapper">
+                        <div class="product-img">
+                        <img src=${shirt[i].src} height="420" width="327">
+                        </div>
+                        <div class="product-info">
+                        <div class="product-text">
+                            <h1>${shirt[i].name}</h1>
+                            <h2>${shirt[i].by}</h2>
+                            <p>${shirt[i].detaile}</p>
+                        </div>
+                        <div class="product-price-btn">
+                            <p><span>${shirt[i].price}</span>₹</p>
+                            <button type="button">buy now</button>
+                        </div>
+                        </div>
+                    </div>`;
+                  }
+                  document.querySelector(".clothCard").innerHTML = v;
+                </script>
+              </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                    <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+                    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+                </div>
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <ul class="footer_ul_amrc">
+                        <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+                        <li><a href="http://webenlance.com">Clipping Path</a></li>
+                        <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+                        <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+                        <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+                        <li><a href="http://webenlance.com">Image Cropping</a></li>
+                    </ul>
+                </div>
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <ul class="footer_ul_amrc">
+                        <li><a href="http://webenlance.com">Remove Background</a></li>
+                        <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+                        <li><a href="http://webenlance.com">Logo Design</a></li>
+                        <li><a href="http://webenlance.com">Vectorization</a></li>
+                        <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+                        <li><a href="http://webenlance.com">Image Cropping</a></li>
+                    </ul>
+                </div>
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                    <ul class="footer_ul2_amrc">
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div class="container">
+                    <ul class="foote_bottom_ul_amrc">
+                        <li><a href="http://webenlance.com">Home</a></li>
+                        <li><a href="http://webenlance.com">About</a></li>
+                        <li><a href="http://webenlance.com">Services</a></li>
+                        <li><a href="http://webenlance.com">Pricing</a></li>
+                        <li><a href="http://webenlance.com">Blog</a></li>
+                        <li><a href="http://webenlance.com">Contact</a></li>
+                    </ul>
+                    <p class="text-center">Copyright @2022 | Designed With by <a href="index.html">CLOVER</a></p>
+                    
+                    <ul class="social_footer_ul">
+                        <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <script src="javascript/clothcard.js"></script>
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </footer>
+</body>
+</html>
