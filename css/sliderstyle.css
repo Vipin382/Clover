@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.slide{
+    width: 100%;
+    box-shadow: 5px 5px 10px 8px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s;
+    height: 95vh;
+    overflow: scroll;
+    display: flex;
+}
+.slide .img1{
+    height: 100%;
+    min-width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+}
+.slide .img1 img{
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+}
+.bars{
+    height: 10px;
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    left: 45%;
+    display: flex;
+    top: 90%;
+}
+.bars .bar1{
+    width: 50px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: rgb(190, 187, 187);
+    border: 1px solid black;
+    transition: all 0.5s; 
+}
+.bar1:not(:nth-child(1)){
+    margin-left: 5px;
+}
+.bar1:hover{
+    background-color: black;
+}
+.slide #im1:checked ~ .first{
+    margin-left: 0%;
+}
+.slide #im2:checked ~ .first{
+    margin-left: -100%;
+}
+.slide #im3:checked ~ .first{
+    margin-left: -200%;
+}
+.slide #im4:checked ~ .first{
+    margin-left: -300%;
+}
+.slide #im5:checked ~ .first{
+    margin-left: -400%;
+}
+.slide input{
+    display: none;
+}
+.bar1{
+    cursor: pointer;
+}

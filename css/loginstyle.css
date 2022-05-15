@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,300&display=swap');
+.btn-login{
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    background-color:rgba(0,0,0,0.8);
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+    transition: display 0.5s;
+}
+.btn-login .container{
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.btn-login .container .main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.btn-login .container .main .register{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(243, 152, 152);
+    flex-direction: column;
+    margin-right: 5px;
+}
+.btn-login .container .main .signin{
+    height: 100%;
+    width: 50%;
+    margin-left: 5px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(243, 152, 152);
+}
+.btn-login .container .main .register .reg{
+    height: 500px;
+    font-size: 20px;
+    display: flex;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-login .container .main .register .reg div{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+}
+.btn-login .container .main .register .reg div input{
+    width: 80%;
+    height: 25px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-login .container .main .register .reg div input:active{
+    outline: none;
+    border: none;
+}
+.btn-login .container .main .register .sub{
+    margin-top: 20px;
+}
+.btn-login .container .main .register input{
+    height: 6%;
+    width: 17%;
+    border-radius: 4px;
+    border: none;
+}
+.btn-login .container .main .register .title{
+    height: 150px;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 360%;
+    font-weight: 1000;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: aliceblue;
+    letter-spacing: 2px;
+    color: rgb(243, 152, 152);
+}
+.btn-login .container .main .register .sub{
+    margin-left: 64%;
+    margin-bottom: 5%;
+    width: 100px;
+    height: 40px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(243, 152, 152);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn-login .container .main .register .sub:hover{
+    color: #fff;
+    background-color: rgb(243, 152, 152);;
+}
+
+/*Form 2 Css */
+
+.btn-login .container .main .signin .title{
+    width: 100%;
+    height: 94px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 360%;
+    font-weight: 1000;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    letter-spacing: 2px;
+    color: rgb(243, 152, 152);
+   }
+   .btn-login .container .main .signin .sign {
+       width: 100%;
+       height: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       border-radius: 10px;
+   }
+   .btn-login .container .main .signin .sign div{
+       width: 80%;
+       color: white;
+       font-family: 'Poppins',sans-serif;
+       font-weight: 1000;
+       font-size: 20px;
+       display: flex;
+       margin-left: 20%;
+       flex-direction: column;
+       justify-content: center;
+       height: 50%;
+   }
+   .btn-login .container .main .signin .sign div input{
+       width: 74%;
+       height: 28px;
+       border-radius: 8px;
+       padding-left: 10px;
+       border: none;
+       outline: none;
+   }
+   .btn-login .container .main .signin .sign div input:active{
+       outline: 0;
+       border: none;
+   }
+   .btn-login .container .main .signin .lgn{
+       height: 25px;
+       width: 15%;
+       border-radius: 5px;
+       border: none;
+       margin-left: auto;
+       margin-right: 20%;
+       font-family: 'Poppins',sans-serif;
+       font-weight: 800;
+       font-size: 15px;
+       letter-spacing: 2px;
+       transition: all 0.4s;
+       color: rgb(243, 152, 152);
+       cursor: pointer;
+   }
+   .btn-login .container .main .signin .lgn:hover{
+       color: #fff;
+       background-color: rgb(243, 152, 152);
+   }
+
+
+   /*******/
+
+
+
+
+.btn-login .container .main .shift{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(235, 103, 103);
+    transition: all 0.5s;
+    display: grid;
+    isolation: isolate;
+    place-content: center;
+    transform: translateX(0%);
+}
+.change{
+ transform: translateX(100%);
+ background-color: rgb(235, 22, 22);
+}
+.shift .lgad{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+}
+.shift .regad{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-color: white;
+}
+.regf{
+    width: 100%;
+    height: 92px;
+    border: none;
+    background-color: white;
+    outline: none;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 360%;
+    font-weight: 1000;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    letter-spacing: 2px;
+    color: rgb(243, 152, 152);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.regf:active{
+    outline: none;
+    border: none;
+}
+.regf:hover{
+    color: #fff;
+    background-color: rgb(243, 152, 152);
+}
+.lgf{
+     width: 100%;
+    height: 92px;
+    border: none;
+    background-color: white;
+    outline: none;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 360%;
+    font-weight: 1000;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    letter-spacing: 2px;
+    color: rgb(243, 152, 152);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.lgf:active{
+    outline: none;
+    border: none;
+}
+.lgf:hover{
+    color: #fff;
+    background-color: rgb(243, 152, 152);
+}
+.lgad video{
+    height: 80.8%;
+    width: 100%;
+    object-fit: cover;
+}
+.regad video{
+    height: 80.8%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*cross*/
+
+.btn-login .cross{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s;
+    right: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-login .cross:hover .bar1,.bar2{
+    background-color: #666;
+}
+.btn-login .cross .bar1{
+    height: 5px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(247, 242, 242);
+    transform: rotateZ(-45deg);
+}
+.btn-login .cross .bar2{
+    height: 5px;
+    width: 40px;
+    background-color: rgb(248, 245, 245);
+    margin-top: -4px;
+    border-radius: 5px;
+    transform: rotateZ(45deg);
+}
+.btn-login .row{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}

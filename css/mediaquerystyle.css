@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.sidebar{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    display: none;
+    z-index: 2;
+}
+.sidebar label i{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+#sidecheck{
+   display: none;
+}
+@media screen and (max-width: 1540px){
+    .sidebar{
+        display: block;
+        z-index: 9;
+    }
+    #sidecheck:checked~ .nav{
+        display: flex;
+    }
+}
+@media screen and (max-width: 1540px) {
+    header .nav{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(11, 60, 133,0.3);
+        display: none;
+        z-index: 7;
+        position: absolute;
+        flex-direction: column;
+    }
+    .nav .logo-cont{
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        cursor: pointer;
+    }
+    .nav .logo-cont p{
+        font-size: 80px;
+    }
+    .nav .search{
+        width: 100%;
+        margin-top: 100px;
+        position: absolute;
+        top: 90px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav .search input{
+        width: 60%;
+        padding-left: 10px;
+    }
+    .nav .search input i{
+        transition: all 0.5s;
+    }
+    .nav .search input i:hover{
+        background-color: rgb(11, 60, 133);
+    }
+    .nav .main{
+        height: 700px;
+        top: 220px;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav .main a{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    .nav .main a:hover{
+        background-color: rgb(92, 90, 90,0.4);
+    }
+    .lang{
+        right: 0;
+        z-index: 2;
+        width:100%;
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .lang select{
+        width:100%;
+        height: 25px;
+        border-radius: 5px;
+        font-weight: 500;
+        outline: none;
+    }
+    .lang select:active{
+        outline: none;
+        border: none;
+    }
+    .user{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 80px;
+        flex-direction:row-reverse;
+        justify-content: center;
+    }
+    .user .profile{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .user .profile img{
+        object-fit: cover;
+        height: inherit;
+        width: inherit;
+    }
+    .user .user-name{
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 50px;
+        margin-left: 80px;
+        color: white;
+    }
+    .ecart{
+        display: none;
+    }
+    /*options*/
+    .option{
+        height: 280px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 5px 5px 10px 8px rgba(0,0,0,0.3);
+        position: absolute;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        display: none;
+        left: 2px;
+        top: 170px;
+        right: 65px;
+        border-radius: 10px;
+    }
+    .option #opt:checked ~ .option{
+        display: block;
+    }
+    .option::before{
+        content: '';
+        height: 30px;
+        width: 30px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        float: left;
+        position: relative;
+        margin-top: -10px;
+        background-color: white;
+        margin-left: 42.5%;
+    }
+    .option .user{
+        display: flex;
+        border: 2px solid black;
+        justify-content: center;
+        height: 90px;
+        width: 100%;
+        margin-top: -80px;
+    }
+    .option .user .user-name{
+        color: black;
+        margin-left: 150px;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .option .log:hover{
+        background-color: rgb(167, 165, 165);
+        cursor: pointer;
+    }
+    .option .user .profile{
+        margin-top: 10px;
+        margin-left: -220px;
+    }
+    .option .ecart{
+        width: 100%;
+        border: 2px solid black;
+        margin-top: 90px;
+        top: 30px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .option .user:hover{
+        background-color: rgb(167, 165, 165);
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    .option .ecart:hover{
+        background-color: rgb(167, 165, 165);
+        cursor: pointer;
+    }
+    .option .ecart i{
+        color: black;
+        margin-left: 20px;
+        transition: all 0.5s;
+    }
+    .option .ecart p{
+        margin-left: 85px;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .option .log{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+    .option .log p{
+        margin-top: 0px;
+        font-size: 35px;
+        font-weight: 400;
+        margin-left: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .option .log i{
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+        margin-left: 5px;
+        height: 40px;
+        width: 40px;
+    }
+  }

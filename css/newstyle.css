@@ -1,0 +1,41 @@
+.new_collection{
+    height: 500px;
+    width: 100%;
+    background: url(../images/new.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    background-size: cover;
+}
+.newlook{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(15, 82, 186,0.3);
+    mix-blend-mode:multiply;
+}
+.menWear{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+section .newlook{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+section .newlook p{
+    font-size: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.option{
+    height: 280px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 8px rgba(0,0,0,0.3);
+    position: absolute;
+    transition: all 0.5s;
+    display: none;
+    top: 75px;
+    right: 65px;
+    border-radius: 10px;
+}
+.option #opt:checked ~ .option{
+    display: block;
+}
+.option::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    float: right;
+    position: relative;
+    margin-top: -10px;
+    background-color: white;
+    margin-right: 40px;
+}
+.option .user{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    margin-top: -80px;
+}
+.option .user .user-name{
+    color: black;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.option .log:hover{
+    background-color: rgb(167, 165, 165);
+    cursor: pointer;
+}
+.option .user .profile{
+    margin-top: 10px;
+    margin-left: -220px;
+}
+.option .ecart{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.option .user:hover{
+    background-color: rgb(167, 165, 165);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.option .ecart:hover{
+    background-color: rgb(167, 165, 165);
+    cursor: pointer;
+}
+.option .ecart i{
+    color: black;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+.option .ecart p{
+    margin-left: 85px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.option .log{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.option .log p{
+    margin-top: 0px;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+}
+.option .log i{
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+}
